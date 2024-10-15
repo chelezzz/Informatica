@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Una fuente moderna */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Color de fondo suave */
+  }
+  
+  .calculadora {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  input {
+    background-color: #f9f9f9;
+    text-align: right;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Color verde para los botones */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+  }
+  
+  #resultado {
+    font-weight: bold;
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Transiciones para la animación */
+  }
+  
+  /* Animación del resultado */
+  .mostrar-resultado {
+    opacity: 1;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
